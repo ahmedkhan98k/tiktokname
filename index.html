@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغيير اسم تيك توك - أحمد خان</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الهيدر -->
+        <div class="header">
+            <h1>🔄 تغيير اسم مستخدم تيك توك</h1>
+            <p>أدخل بياناتك لتغيير اسم المستخدم بدون تحقق</p>
+        </div>
+
+        <!-- معلومات المطور -->
+        <div class="developer-info">
+            <div class="developer-card">
+                <h3>👨‍💻 المبرمج: أحمد خان</h3>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@_98ak" target="_blank" class="social-link tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        TikTok: _98ak
+                    </a>
+                    <a href="https://www.instagram.com/_98sf" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        Instagram: _98sf
+                    </a>
+                    <a href="https://t.me/AHMED_KHANA" target="_blank" class="social-link telegram">
+                        <i class="fab fa-telegram"></i>
+                        Telegram: AHMED_KHANA
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- نموذج الإدخال -->
+        <div class="form-section">
+            <div class="form-group">
+                <label for="sessionId">🔐 Session ID:</label>
+                <input type="text" id="sessionId" placeholder="أدخل الـ Session ID من تطبيق تيك توك">
+                <small>يمكن الحصول على Session ID من تطبيق تيك توك</small>
+            </div>
+
+            <div class="form-group">
+                <label for="newUsername">📝 الاسم الجديد:</label>
+                <input type="text" id="newUsername" placeholder="أدخل الاسم الجديد الذي تريده">
+            </div>
+
+            <button id="changeBtn" onclick="changeUsername()">
+                <i class="fas fa-sync-alt"></i>
+                تغيير الاسم
+            </button>
+        </div>
+
+        <!-- تحميل -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>جاري معالجة طلبك...</p>
+        </div>
+
+        <!-- النتائج -->
+        <div id="result" class="result hidden"></div>
+
+        <!-- معلومات مهمة -->
+        <div class="info-section">
+            <h3>ℹ️ معلومات مهمة:</h3>
+            <ul>
+                <li>يجب الحصول على Session ID من تطبيق تيك توك</li>
+                <li>لا يتم تخزين أي بيانات على الموقع</li>
+                <li>التغيير فوري بعد الضغط على الزر</li>
+                <li>للاستفسارات تواصل مع المطور عبر وسائل التواصل أعلاه</li>
+            </ul>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="footer">
+            <p>© 2025 جميع الحقوق محفوظة - تم التطوير بواسطة <strong>أحمد خان</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
