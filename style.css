@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* معلومات المطور */
+.developer-info {
+    margin-bottom: 25px;
+}
+
+.developer-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.developer-card h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.social-link.tiktok:hover {
+    background: #000000;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-link.telegram:hover {
+    background: #0088cc;
+}
+
+/* النموذج */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* التحميل */
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* النتائج */
+.result {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.result.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.result.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.result.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* معلومات إضافية */
+.info-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.info-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-section ul {
+    list-style-position: inside;
+}
+
+.info-section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* الفوتر */
+.footer {
+    text-align: center;
+    padding: 20px 0 0;
+    border-top: 1px solid #eee;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer strong {
+    color: #667eea;
+}
+
+.hidden {
+    display: none;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    input, button {
+        font-size: 16px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+    }
+    
+    .developer-card h3 {
+        font-size: 16px;
+    }
+    
+    .social-link {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 18px;
+    }
+    
+    .developer-card {
+        padding: 15px;
+    }
+}
