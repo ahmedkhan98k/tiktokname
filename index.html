@@ -11,8 +11,8 @@
     <div class="container">
         <!-- الهيدر -->
         <div class="header">
-            <h1>🔄 تغيير اسم مستخدم تيك توك</h1>
-            <p>أدخل بياناتك لتغيير اسم المستخدم بدون تحقق</p>
+            <h1>🔄 تغيير الاسم الظاهر في تيك توك</h1>
+            <p>غير اسمك الظاهر (Display Name) بدون تحقق</p>
         </div>
 
         <!-- معلومات المطور -->
@@ -40,16 +40,17 @@
         <div class="form-section">
             <div class="form-group">
                 <label for="sessionId">🔐 Session ID:</label>
-                <input type="text" id="sessionId" placeholder="أدخل الـ Session ID من تطبيق تيك توك">
+                <input type="text" id="sessionId" placeholder="أدخل الـ Session ID">
                 <small>يمكن الحصول على Session ID من تطبيق تيك توك</small>
             </div>
 
             <div class="form-group">
-                <label for="newUsername">📝 الاسم الجديد:</label>
-                <input type="text" id="newUsername" placeholder="أدخل الاسم الجديد الذي تريده">
+                <label for="newNickname">📝 الاسم الظاهر الجديد:</label>
+                <input type="text" id="newNickname" placeholder="أدخل الاسم الجديد الذي تريده">
+                <small>هذا الاسم الظاهر (Display Name) وليس username</small>
             </div>
 
-            <button id="changeBtn" onclick="changeUsername()">
+            <button id="changeBtn" onclick="changeDisplayName()">
                 <i class="fas fa-sync-alt"></i>
                 تغيير الاسم
             </button>
@@ -68,10 +69,10 @@
         <div class="info-section">
             <h3>ℹ️ معلومات مهمة:</h3>
             <ul>
+                <li>يغير <strong>الاسم الظاهر</strong> فقط وليس username</li>
                 <li>يجب الحصول على Session ID من تطبيق تيك توك</li>
                 <li>لا يتم تخزين أي بيانات على الموقع</li>
                 <li>التغيير فوري بعد الضغط على الزر</li>
-                <li>للاستفسارات تواصل مع المطور عبر وسائل التواصل أعلاه</li>
             </ul>
         </div>
 
